@@ -1,0 +1,27 @@
+﻿@model List<DesignPattern.Facade.DAL.Customer>
+@{
+    ViewData["Title"] = "CustomerList";
+    Layout = "~/Views/Shared/_Navbar.cshtml";
+}
+
+<h1>Customer List</h1>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>City</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.CustomerId</td>
+            <td>@item.CustomerName</td>
+            <td>@item.CustomerSurname</td>
+            <td>@item.CustomerCity</td>
+        </tr>
+    }
+</table>
+<a href="/Customer/AddNewCustomer" class="btn btn-primary">Add New Customer</a>
+

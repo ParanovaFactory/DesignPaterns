@@ -1,0 +1,24 @@
+﻿@model DesignPattern.Facade.DAL.Product
+@{
+    ViewData["Title"] = "AddNewProduct";
+    Layout = "~/Views/Shared/_Navbar.cshtml";
+}
+
+<h1>Add New Product</h1>
+
+<form method="post">
+    <label>Product Name</label>
+    <input type="text" class="form-control" asp-for="ProductName" />
+    <br />
+    <label>Stok</label>
+    <input type="text" class="form-control" asp-for="ProductStock" />
+    <br />
+    <label>Price</label>
+    <input type="text" class="form-control" asp-for="ProductPrice" />
+    <br />
+    <label>Category</label>
+    <input type="text" class="form-control" asp-for="ProductCategory" />
+    <br />
+    <button class="btn btn-outline-dark">SAVE</button>
+</form>
+

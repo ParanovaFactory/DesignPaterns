@@ -1,0 +1,26 @@
+﻿@model DesignPattern.Mediator.MediatorPattern.Commands.CreateProductCommand
+@{
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+<div class="container">
+    <br />
+    <br />
+    <form method="post" class="form-control">
+        <label>Product Name</label>
+        <input type="text" class="form-control" asp-for="ProductName" />
+        <br />
+        <label>Product Stock</label>
+        <input type="text" class="form-control" asp-for="ProductStock" />
+        <br />
+        <label>Product Price</label>
+        <input type="text" class="form-control" asp-for="ProductPrice" />
+        <br />
+        <label>Product Category</label>
+        <input type="text" class="form-control" asp-for="ProductCategory" />
+        <br />
+        <button class="btn btn-outline-dark">SAVE</button>
+    </form>
+</div>

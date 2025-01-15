@@ -1,0 +1,29 @@
+﻿@model List<DesignPattern.Facade.DAL.Product>
+@{
+    ViewData["Title"] = "ProductList";
+    Layout = "~/Views/Shared/_Navbar.cshtml";
+}
+
+<h1>Product List</h1>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Stock</th>
+        <th>Category</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ProductId</td>
+            <td>@item.ProductName</td>
+            <td>@item.ProductPrice</td>
+            <td>@item.ProductStock</td>
+            <td>@item.ProductCategory</td>
+        </tr>
+    }
+</table>
+<a href="/Product/AddNewProduct" class="btn btn-primary">Add New Product</a>
+

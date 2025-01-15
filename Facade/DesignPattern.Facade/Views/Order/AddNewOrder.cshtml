@@ -1,0 +1,15 @@
+﻿@model DesignPattern.Facade.DAL.Order
+
+@{
+    ViewData["Title"] = "AddNewOrder";
+    Layout = "~/Views/Shared/_Navbar.cshtml";
+}
+
+<h1>Add New Order</h1>
+<form method="post">
+    <label>Customer Id</label>
+    <input type="text" class="form-control" asp-for="CustomerId" />
+    <br />
+    <button class="btn btn-outline-dark">SAVE</button>
+</form>
+

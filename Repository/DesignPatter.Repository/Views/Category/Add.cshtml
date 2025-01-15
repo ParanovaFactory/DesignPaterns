@@ -1,0 +1,14 @@
+﻿@model List<DesignPattern.EntityLayer.Concrate.Category>
+@{
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+<form method="post">
+    <br />
+    <label>Category Name</label>
+    <input type="text" @* asp-for="#"  *@class="form-control" />
+    <br />
+    <button class="btn btn-primary">SAVE</button>
+</form>

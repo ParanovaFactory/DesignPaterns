@@ -1,0 +1,22 @@
+﻿@model DesignPatern.CQRS.CQRSPattern.Commands.CreateProductComment
+@{
+    Layout = null;
+}
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+<div class="container">
+    <form method="post">
+        <label>Name</label>
+        <input type="text" class="form-control" asp-for="name" />
+        <br />
+        <label>Stock</label>
+        <input type="text" class="form-control" asp-for="stock" />
+        <br />
+        <label>Price</label>
+        <input type="text" class="form-control" asp-for="price" />
+        <br />
+        <label>Description</label>
+        <input type="text" class="form-control" asp-for="description" />
+        <br />
+        <button class="btn btn-dark">SAVE</button>
+    </form>
+</div>

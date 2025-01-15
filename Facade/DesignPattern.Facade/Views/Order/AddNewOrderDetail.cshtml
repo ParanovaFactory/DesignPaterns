@@ -1,0 +1,27 @@
+﻿@model DesignPattern.Facade.DAL.OrderDetail
+
+@{
+    ViewData["Title"] = "AddNewOrderDetail";
+    Layout = "~/Views/Shared/_Navbar.cshtml";
+}
+
+<h1>Add New Order Detail</h1>
+
+<form method="post">
+    <label>Customer Id</label>
+    <input type="text" class="form-control" asp-for="CustomerId" />
+    <br />
+    <label>Product Id</label>
+    <input type="text" class="form-control" asp-for="ProductId" />
+    <br />
+    <label>Order Id</label>
+    <input type="text" class="form-control" asp-for="OrderId" />
+    <br />
+    <label>Product Price</label>
+    <input type="text" class="form-control" asp-for="ProductPrice" />
+    <br />
+    <label>Product Count</label>
+    <input type="text" class="form-control" asp-for="ProductCount" />
+    <br />
+    <button class="btn btn-outline-dark">SAVE</button>
+</form>

@@ -1,0 +1,24 @@
+﻿@model DesignPattern.Facade.DAL.Customer
+@{
+    ViewData["Title"] = "AddNewCustomer";
+    Layout = "~/Views/Shared/_Navbar.cshtml";
+}
+
+<h1>Add New Customer</h1>
+
+<form method="post">
+    <label>Name</label>
+    <input type="text" class="form-control" asp-for="CustomerName" />
+    <br />
+    <label>Surname</label>
+    <input type="text" class="form-control" asp-for="CustomerSurname" />
+    <br />
+    <label>Address</label>
+    <input type="text" class="form-control" asp-for="CustomerAddress" />
+    <br />
+    <label>City</label>
+    <input type="text" class="form-control" asp-for="CustomerCity" />
+    <br />
+    <button class="btn btn-outline-dark">SAVE</button>
+</form>
+

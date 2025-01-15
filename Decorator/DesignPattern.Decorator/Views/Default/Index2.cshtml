@@ -1,0 +1,22 @@
+﻿@model DesignPattern.Decorator.DAL.Message
+
+@{
+    ViewData["Title"] = "Index2";
+}
+
+<form method="post">
+    <label>Sender</label>
+    <input type="text" class="form form-control" asp-for="MessageSender" />
+    <br />
+    <label>Receiver</label>
+    <input type="text" class="form form-control" asp-for="MessageReceiver" />
+    <br />
+    <label>Subject</label>
+    <input type="text" class="form form-control" asp-for="MessageSubject" />
+    <br />
+    <label>Content</label>
+    <input type="text" class="form form-control" asp-for="MessageContent" />
+    <br />
+    <button class="btn btn-outline-dark">SEND</button>
+</form>
+

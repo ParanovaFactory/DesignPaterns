@@ -1,0 +1,30 @@
+﻿@model List<DesignPattern.EntityLayer.Concrate.Category>
+@{
+    Layout = null;
+}
+
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+<div class="container">
+    <br />
+    <table class="table table-bordered">
+        <tr>
+            <th>#</th>
+            <th>Category Name</th>
+            <th>Delete</th>
+            <th>Update</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.CatagoryId</td>
+                <td>@item.CatagoryName</td>
+                <td><a href="/Category/Delete/@item.CatagoryId" class="btn btn-danger">Delete</a> </td>
+                <td>
+                    <a href="/Category/Edit/@item.CatagoryId" class="btn btn-warning">Edit</a>
+                    </td>
+            </tr>
+        }
+    </table>
+    <a href="/Category/Add" class="btn btn-warning">SAVE</a>
+</div>
